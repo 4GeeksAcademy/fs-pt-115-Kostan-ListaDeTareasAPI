@@ -20,8 +20,8 @@ const Home = () => {
 	};
 
 	const handleDelete = (idx) => {
-		setTareas(tareas.filter((_, i) => i !== idx));
-	};
+	setTareas(tareas.filter((tarea, i) => i !== idx));
+};
 
 	return (
 		<div className="container mt-5">
