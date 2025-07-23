@@ -84,6 +84,7 @@ const Home = () => {
 	};
 
 	return (
+		<>
 		<div className="container mt-5">
 			<h1>Lista de Tareas</h1>
 			<input
@@ -149,14 +150,15 @@ const Home = () => {
 					))
 				)}
 			</div>
+
+		</div>
 			<button
-				className="btn btn-primary"
+				className="btn btn-primary d-flex mx-auto mt-3"
 				onClick={() => tareas.map(tarea => eliminarTodo(tarea.id))}
 			>
 				Eliminar todo
 			</button>
-
-		</div>
+			</>
 	);
 };
 
